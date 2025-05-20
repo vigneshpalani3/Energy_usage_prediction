@@ -1,37 +1,78 @@
-# Energy Usage Prediction
+⚡ Energy Usage Prediction
+This project focuses on predicting household energy consumption using machine learning techniques. By leveraging historical energy usage data, the goal is to develop models that can accurately forecast future energy demands, aiding in efficient energy management and planning.
 
-This project aims to predict energy consumption using machine learning techniques. It involves data preprocessing and model building to forecast energy usage based on historical data.
+📁 Repository Structure
+Data_preprocessing.ipynb: Notebook dedicated to data cleaning, feature engineering, and exploratory data analysis.
 
-## 📁 Repository Structure
+model_building.ipynb: Notebook for training and evaluating machine learning models.
 
-- `Data_preprocessing.ipynb`: Notebook for data cleaning, feature engineering, and exploratory data analysis.
-- `model_building.ipynb`: Notebook for training and evaluating machine learning models.
+📊 Dataset
+The dataset utilized is the Individual Household Electric Power Consumption Data Set from the UCI Machine Learning Repository.
 
-## 📊 Dataset
+Dataset Details:
 
-*Note: Please provide details about the dataset used, including the source, features, and any preprocessing steps applied.*
+Duration: December 2006 to November 2010.
 
-## 🛠️ Methodology
+Frequency: 1-minute intervals.
 
-1. **Data Preprocessing**:
-   - Handling missing values
-   - Feature selection and engineering
-   - Data normalization or scaling
+Features:
 
-2. **Model Building**:
-   - Splitting data into training and testing sets
-   - Training machine learning models (e.g., Linear Regression, Decision Trees)
-   - Evaluating model performance using metrics like RMSE, MAE, and R²
+Global_active_power: Household global minute-averaged active power (kilowatts).
 
-## 📈 Results
+Global_reactive_power: Household global minute-averaged reactive power (kilowatts).
 
-*Note: Summarize the performance of the models tested, highlighting the best-performing model and its evaluation metrics.*
+Voltage: Minute-averaged voltage (volts).
 
-## 📌 Future Work
+Global_intensity: Minute-averaged current intensity (amperes).
 
-- Incorporate additional features such as weather data or occupancy information
-- Experiment with advanced models like Random Forests or Gradient Boosting Machines
-- Deploy the model as a web application for real-time energy usage prediction
+Sub_metering_1: Energy sub-metering No. 1 (watt-hours).
 
+Sub_metering_2: Energy sub-metering No. 2 (watt-hours).
 
+Sub_metering_3: Energy sub-metering No. 3 (watt-hours).
 
+🛠️ Methodology
+1. Data Preprocessing
+Handling Missing Values: Identified and addressed missing entries to ensure data integrity.
+
+Feature Engineering: Extracted temporal features such as hour, day, and month to capture time-based consumption patterns.
+
+Normalization: Applied scaling techniques to standardize the feature set.
+
+2. Model Building
+Linear Regression:
+
+Validated using 5-fold cross-validation to assess model stability.
+
+Random Forest Regressor:
+
+Hyperparameters tuned using RandomizedSearchCV to optimize performance given the large dataset size.
+
+3. Evaluation Metrics
+R² Score: Measures the proportion of variance explained by the model.
+
+Mean Squared Error (MSE): Penalizes larger errors more significantly.
+
+Mean Absolute Error (MAE): Provides the average magnitude of errors.
+
+📈 Results
+Model	R² Score	MSE	MAE
+Linear Regression	0.85	0.03	0.15
+Random Forest	0.89	0.02	0.12
+
+Note: Replace the above metric values with your actual results.
+
+🚀 Future Work
+Incorporate External Factors: Integrate weather data and occupancy information to enhance model accuracy.
+
+Advanced Modeling Techniques: Explore models like Gradient Boosting Machines or LSTM networks for improved performance.
+
+Deployment: Develop a web application or dashboard for real-time energy usage prediction.
+
+📄 License
+This project is open-source and available under the MIT License.
+
+🙏 Acknowledgements
+Dataset sourced from the UCI Machine Learning Repository.
+
+Utilized libraries: Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn.
