@@ -33,11 +33,5 @@ This project aims to predict energy consumption using machine learning technique
 - Experiment with advanced models like Random Forests or Gradient Boosting Machines
 - Deploy the model as a web application for real-time energy usage prediction
 
-## 📄 License
 
-This project is open-source and available under the [MIT License](LICENSE).
-
-## 🤝 Acknowledgements
-
-*Note: Acknowledge any datasets, libraries, or resources used in the project.*
 
