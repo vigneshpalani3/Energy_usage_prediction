@@ -57,20 +57,9 @@ Mean Absolute Error (MAE): Provides the average magnitude of errors.
 
 📈 Results
 Model	R² Score	MSE	MAE
-Linear Regression	0.85	0.03	0.15
-Random Forest	0.89	0.02	0.12
+Linear Regression	0.99	0.001	0.02
+Random Forest	0.99	0.003	0.03
 
-Note: Replace the above metric values with your actual results.
-
-🚀 Future Work
-Incorporate External Factors: Integrate weather data and occupancy information to enhance model accuracy.
-
-Advanced Modeling Techniques: Explore models like Gradient Boosting Machines or LSTM networks for improved performance.
-
-Deployment: Develop a web application or dashboard for real-time energy usage prediction.
-
-📄 License
-This project is open-source and available under the MIT License.
 
 🙏 Acknowledgements
 Dataset sourced from the UCI Machine Learning Repository.
